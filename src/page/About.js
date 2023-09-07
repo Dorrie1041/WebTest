@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import '../App.css';
 
 export default function About(){
@@ -9,22 +10,22 @@ export default function About(){
             <nav className="Aboutnav">
                 <ul className="Aboutul">
                     <li className="Aboutli">
-                        <Link className={"About-link"} to="/teammember/LuisAbout">Luis</Link>
+                        <StyleLink to="/teammember/LuisAbout" style={{ textDecoration: 'none' }}>Luis</StyleLink>
                     </li>
                     <li className="Aboutli">
-                        <Link className={"About-link"} to="/teammember/dorrieabout">Dorrie</Link>
+                        <StyleLink to="/teammember/dorrieabout" style={{ textDecoration: 'none' }}>Dorrie</StyleLink>
                     </li>
                     <li className="Aboutli">
-                        <Link className={"About-link"} to="/teammember/VedangAbout">Vedang</Link>
+                        <StyleLink to="/teammember/VedangAbout" style={{ textDecoration: 'none' }}>Vedang</StyleLink>
                     </li>
                     <li className="Aboutli">
-                        <Link className={"About-link"} to="/teammember/GwangwooAbout">Gwangwoo</Link>
+                        <StyleLink to="/teammember/GwangwooAbout" style={{ textDecoration: 'none' }}>Gwangwoo</StyleLink>
                     </li>
                     <li className="Aboutli">
-                        <Link className={"About-link"} to="/teammember/JoohoAbout">Jooho</Link>
+                        <StyleLink to="/teammember/JoohoAbout" style={{ textDecoration: 'none' }}>Jooho</StyleLink>
                     </li>
                     <li className="Aboutli">
-                        <Link className={"About-link"} to="/teammember/LesliAbout">Lesli</Link>
+                        <StyleLink to="/teammember/LesliAbout" style={{ textDecoration: 'none' }}>Lesli</StyleLink>
                     </li>
                 </ul>
             </nav>
@@ -32,4 +33,11 @@ export default function About(){
         );
     
 }
+
+const StyleLink = styled(Link)`
+   text-decoration: none;
+   &:hover{
+     color: blue;
+   }
+`;
 
