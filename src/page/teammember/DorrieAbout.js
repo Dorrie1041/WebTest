@@ -2,7 +2,7 @@ const DorrieAbout =()=>{
     return (<>
     <h1>Dorrie Shen</h1>
     <br/>
-    <p>Role: Github Master (GOGO)</p>
+    <p>Role: Github Master (GOGO!!!)</p>
     </>);
 };
 
